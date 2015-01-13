@@ -1,0 +1,71 @@
+//$pink:     #FAC8BF;
+//$ltblue:   #6A8D9D;
+//$dkblue:   #466675;
+//$neonblue: #94E1FC;
+//$gray:     #CCCCCC;
+
+//consider swapping colors with my old website... not sure how much I like that
+//$gnbl: rgb(88, 140, 126)
+//$yella: rgb(242, 227, 148)
+//$orng: rgb(242, 174, 114)
+//$ltrd: rgb(217, 100, 89)
+//$dkrd: rgb(140, 70, 70)
+
+
+// my color scheme
+// background off white: #fdf9f3
+// Black: #000000
+
+@mixin vertical-align {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+
+section {
+  padding: 45px 0px;
+}
+
+.big {
+  height: 100px;
+  min-height: 100vh;
+  .child {
+    @include vertical-align
+  }
+}
+
+
+.mainslide {
+  color: white;
+  background-color: #466675;
+  vertical-align: middle;
+
+  h1.name {
+    color: #FAC8BF;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 5.25em;
+    text-align: center;
+    position: relative;
+  }
+}
+
+body{
+  font-family: "Alice";
+  text-align: center;
+  padding: 50px 20px 0;
+  margin: 0;
+  background-color: #466675;
+}
+
+h1{
+  font-size: 65px;
+  padding: 20px 0;
+}
+
+h3{
+  font-weight: 300;
+}

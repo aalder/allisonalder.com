@@ -1,0 +1,185 @@
+$pink:       #FAC8BF;
+$ltblue:     #6A8D9D;
+$dkblue:     #466675;
+$neonblue:   #94E1FC;
+$gray:       #CCCCCC;
+$yellow:     #F9FBBA;
+$highpurple: #737495;
+$highgreen:  #E2F2D5;
+$white:      #FFFFFF;
+$black:      #000000;
+
+//rgb(224,228,204)     #E0E4CC
+//rgb(247,234,200)     #F7EAC8
+//rgb(252, 235, 182)   #FCEBB6
+//rgb(115, 116, 149)   #737495
+
+@mixin vertical-align {
+  position: relative;
+  top: 30%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+section {
+  padding: 45px 0px;
+}
+
+body.aboutme {
+  background-color: $gray;
+}
+
+//general things
+body{
+  font-family: "Alice";
+  background-color: $dkblue;
+  color: white;
+  text-align: center;
+  padding: 50px 20px 0;
+  margin: 0;
+}
+
+h1{
+  font-size: 65px;
+  padding: 20px 0;
+}
+
+h3{
+  font-weight: 300;
+}
+
+section {
+  padding: 45px 0px;
+}
+
+
+//specific sections
+.big {
+  height: 100px;
+  min-height: 100vh;
+  .child {
+    @include vertical-align
+  }
+}
+
+.heart {
+  margin: 0px auto 30px;
+  width: 30%;
+}
+
+.me {
+  margin: 0px auto 30px;
+  width: 90%
+}
+
+section.mainslide {
+  color: white;
+  background-color: $dkblue;
+
+  body {
+    background-color: $dkblue;
+  }
+
+  h1.name {
+    color: $pink;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 5.25em;
+    text-align: center;
+    position: relative;
+  }
+
+  ::selection {
+    background: $highpurple;
+  }
+  ::-moz-selection {
+    background: $highpurple;
+  }
+}
+
+section.aboutme {
+  //color: $ltblue;
+  //background-color: $gray;
+  color: $white;
+  background-color: $pink;
+
+  body {
+    background-color: $gray;
+  }
+
+  h1.title {
+    //color: $dkblue;
+    color: white;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 5.25em;
+    text-align: left;
+    position: relative;
+  }
+  h2 {
+    //color: $dkblue;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: left;
+    position: relative;
+  }
+
+  h2.detail {
+    //color: $ltblue;
+    position: relative;
+  }
+
+  img {
+    margin-left: 50px;
+  }
+
+  a {
+    color: $ltblue;
+    text-decoration: none;
+    &:hover {
+      text-decoration: none;
+      color: $highpurple;
+    }
+  }
+
+  ::selection {
+    background: $highgreen;
+    //background: $highpurple;
+  }
+  ::-moz-selection {
+    background: $highgreen;
+    //background: $highpurple;
+  }
+}
+
+section.bottomBar {
+  color: white;
+  background-color: $dkblue;
+
+  body {
+    background-color: $dkblue;
+  }
+
+  h1.ital {
+    color: $pink;
+    font-style: italic;
+  }
+
+  ::selection {
+    background: $highpurple;
+  }
+  ::-moz-selection {
+    background: $highpurple;
+  }
+}
+
+a {
+  color: $neonblue;
+  text-decoration: none;
+  //transition: 0.8s ease;
+  &:hover {
+    text-decoration: none;
+    color: $yellow;
+  }
+}
