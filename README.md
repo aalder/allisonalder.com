@@ -1,4 +1,7 @@
-# allisonalder.com
+#Depricated
+This webiste has been abandoned in favor of aalder.github.io which is currently under construction. 
+
+## allisonalder.com
 My personal website
 
 This is not up online yet. It will be up as soon as I figure out how to do this via Google Cloud Storage.
